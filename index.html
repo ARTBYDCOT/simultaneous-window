@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Simultaneous Window — An experimental cartography connecting physical and digital walking in Bogotá. By D.C.O.T."/>
+  <meta property="og:title" content="Simultaneous Window — D.C.O.T."/>
+  <meta property="og:description" content="Multimedia art project connecting physical and digital walking in Bogotá."/>
+  <meta property="og:url" content="https://simultaneouswindow.xyz"/>
+  <title>Simultaneous Window — D.C.O.T.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="#" class="nav-logo">S·W</a>
+  <div class="nav-links">
+    <a href="#map">Map</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#metaverse">Metaverse</a>
+    <a href="#market">Market</a>
+    <a href="#contribute">Contribute</a>
+    <a href="#about">About</a>
+  </div>
+  <button class="nav-menu-toggle" id="menuToggle">☰</button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#map"         onclick="closeMobileMenu()">Map</a>
+  <a href="#experiences" onclick="closeMobileMenu()">Experiences</a>
+  <a href="#metaverse"   onclick="closeMobileMenu()">Metaverse</a>
+  <a href="#market"      onclick="closeMobileMenu()">Market</a>
+  <a href="#contribute"  onclick="closeMobileMenu()">Contribute</a>
+  <a href="#about"       onclick="closeMobileMenu()">About</a>
+</div>
+
+<!-- HERO MAP -->
+<section id="map" class="hero">
+  <div class="hero-overlay">
+    <div class="hero-title">
+      <span class="hero-label">D.C.O.T. · Bogotá · 2018–</span>
+      <h1>Simultaneous<br>Window</h1>
+      <p class="hero-sub">An experimental cartography connecting physical and digital walking through the city</p>
+    </div>
+  </div>
+  <div class="map-container">
+    <iframe
+      src="https://umap.openstreetmap.fr/en/map/simultaneous-window-bogota_723501?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false#13/4.6239/-74.1448"
+      width="100%" height="100%" frameborder="0" allowfullscreen
+      title="Simultaneous Window Map — Bogotá" loading="lazy"
+    ></iframe>
+  </div>
+  <a href="https://umap.openstreetmap.fr/en/map/simultaneous-window-bogota_723501" target="_blank" class="map-open-btn">Open full map ↗</a>
+  <div class="scroll-hint">↓ explore</div>
+</section>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-block">
+        <div class="sidebar-block-title">Navigate</div>
+        <nav class="sidebar-nav">
+          <a href="#experiences" class="sidebar-link active">Experiences</a>
+          <a href="#exhibitions"  class="sidebar-link">Exhibitions</a>
+          <a href="#metaverse"    class="sidebar-link">Metaverse</a>
+          <a href="#market"       class="sidebar-link">Art Market</a>
+          <a href="#contribute"   class="sidebar-link">Contribute</a>
+          <a href="#about"        class="sidebar-link">About</a>
+        </nav>
+      </div>
+      <div class="sidebar-block">
+        <div class="sidebar-block-title">Latest entries</div>
+        <div class="sidebar-entries" id="sidebarEntries"></div>
+      </div>
+      <div class="sidebar-block">
+        <div class="sidebar-block-title">Network</div>
+        <div class="sidebar-network">
+          <a href="https://objkt.com/users/tz1NRH5vQHA62EKzSHXDZ4V8tXMzUuBCQToR" target="_blank" class="network-link">
+            <span class="network-dot tez"></span>XTZ · simultaneouswindow.tez
+          </a>
+          <div class="network-link"><span class="network-dot eth"></span>ETH · dcot-art.eth.co</div>
+          <div class="network-link"><span class="network-dot btc"></span>BTC · 14fDoU…UCM8</div>
+          <div class="network-link"><span class="network-dot ipfs"></span>IPFS · decentralized web</div>
+        </div>
+      </div>
+      <div class="sidebar-block">
+        <a href="#contribute" class="sidebar-cta">+ Submit your experience →</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <!-- 01 EXPERIENCES -->
+    <section id="experiences" class="section">
+      <div class="section-header">
+        <span class="section-tag">01 — Experiences</span>
+        <h2>Urban Archives</h2>
+        <p>Video and audio archives of daily commutes through Bogotá's urban fabric. Each file is geolocated and stored on IPFS, building the decentralized web hypertext of the city.</p>
+      </div>
+      <div class="video-feature">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/AFPyGM1bQRM"
+            title="Simultaneous Window — Urban Experience" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-info">
+          <span class="entry-tag video">video</span>
+          <h3>Simultaneous Window — Urban Walk</h3>
+          <p>A simultaneous experience connecting physical commute and digital space. The user walks through a real physical space while browsing geolocated content stored in the decentralized web. Parting from video and audio archives of daily commutes, DCOT builds a sense of simultaneity between real and digital life on the web.</p>
+          <div class="entry-meta">
+            <span class="geo">4.6239° N · 74.1448° W</span>
+            <span class="ipfs-tag">IPFS</span>
+          </div>
+        </div>
+      </div>
+      <div class="entries-grid" id="experiencesGrid"></div>
+    </section>
+
+    <!-- 02 EXHIBITIONS -->
+    <section id="exhibitions" class="section">
+      <div class="section-header">
+        <span class="section-tag">02 — Exhibitions</span>
+        <h2>Exhibition History</h2>
+        <p>Physical and digital exhibitions where Simultaneous Window has been presented — from the streets of Bogotá to the Tezos blockchain.</p>
+      </div>
+      <div class="exhibitions-list" id="exhibitionsList"></div>
+    </section>
+
+    <!-- 03 METAVERSE -->
+    <section id="metaverse" class="section">
+      <div class="section-header">
+        <span class="section-tag">03 — Metaverse</span>
+        <h2>Septimazo · Voxels</h2>
+        <p>Enter the digital twin of the walk. A Voxels metaverse space mirroring the physical experience of Carrera Séptima, Bogotá. Walk through a 3D digital environment connected to the real city.</p>
+      </div>
+      <div class="metaverse-embed">
+        <iframe
+          src="https://www.voxels.com/spaces/3a1173bc-9f73-457d-a567-20f9d849702c/play"
+          title="Simultaneous Window — Septimazo Voxels Space"
+          frameborder="0" allow="xr-spatial-tracking; fullscreen"
+          allowfullscreen loading="lazy"
+        ></iframe>
+      </div>
+      <div class="metaverse-info">
+        <div class="meta-info-card">
+          <div class="icon">◈</div>
+          <h4>Voxels Metaverse</h4>
+          <p>Built on Ethereum. A 3D voxel world accessible from your browser — no download required. Walk the digital Séptima.</p>
+        </div>
+        <div class="meta-info-card">
+          <div class="icon">⊞</div>
+          <h4>Multidimensional</h4>
+          <p>A complement to the physical walk and the 2D map. Three simultaneous dimensions: IRL, uMap, and Voxels metaverse.</p>
+        </div>
+        <div class="meta-info-card">
+          <div class="icon">↗</div>
+          <h4>Open & Free</h4>
+          <p>Enter without an account. Connect a wallet to participate fully in the decentralized ecosystem of the project.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 MARKET -->
+    <section id="market" class="section">
+      <div class="section-header">
+        <span class="section-tag">04 — Art Market</span>
+        <h2>Collectibles</h2>
+        <p>NFTs on the Tezos blockchain. By acquiring a piece you support the project and become part of its decentralized archive.</p>
+      </div>
+      <div class="market-banner">
+        <div class="market-banner-text">
+          <span class="market-platform">objkt.com · Tezos blockchain · simultaneouswindow.tez</span>
+          <h3>DCOT Collection</h3>
+          <p>Each NFT is a geolocated fragment of urban experience — video, audio, or text — stored permanently on IPFS. Owning one means owning a piece of Bogotá's digital memory. The scheme and structure of the project is embedded in each piece's metadata.</p>
+          <a href="https://objkt.com/users/tz1NRH5vQHA62EKzSHXDZ4V8tXMzUuBCQToR" target="_blank" class="market-btn">View collection on Objkt ↗</a>
+        </div>
+        <div class="market-banner-visual">
+          <div class="nft-grid-preview">
+            <div class="nft-card-mini"><div class="nft-thumb" style="background:linear-gradient(135deg,#1a1f2e,#2d3561)"><span>SW·001</span></div></div>
+            <div class="nft-card-mini"><div class="nft-thumb" style="background:linear-gradient(135deg,#2d1a1a,#6b2d2d)"><span>SW·002</span></div></div>
+            <div class="nft-card-mini"><div class="nft-thumb" style="background:linear-gradient(135deg,#1a2d1a,#2d6b2d)"><span>SW·003</span></div></div>
+            <div class="nft-card-mini"><div class="nft-thumb" style="background:linear-gradient(135deg,#2d2a1a,#6b5a2d)"><span>SW·004</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="market-info-grid">
+        <div class="market-info-card"><div class="market-info-icon">◈</div><h4>Tezos blockchain</h4><p>Low energy, low fees. Each collectible is permanently recorded on-chain with its IPFS metadata and geolocation.</p></div>
+        <div class="market-info-card"><div class="market-info-icon">⊞</div><h4>Geolocated NFTs</h4><p>Every piece links to a specific coordinate on the Bogotá map. Buy a place in the city's digital memory.</p></div>
+        <div class="market-info-card"><div class="market-info-icon">↗</div><h4>Support the project</h4><p>Revenue goes directly to DCOT to expand the archive and fund new urban walking experiences across Bogotá.</p></div>
+      </div>
+    </section>
+
+    <!-- 05 CONTRIBUTE -->
+    <section id="contribute" class="section">
+      <div class="section-header">
+        <span class="section-tag">05 — Contribute</span>
+        <h2>Add to the map</h2>
+        <p>Submit your own geolocated experience. All contributions are reviewed by the administrator before appearing on the public map.</p>
+      </div>
+      <div class="contribute-grid">
+        <div class="contribute-info">
+          <h3>How it works</h3>
+          <p>Simultaneous Window is an open archive of urban experiences. You can contribute a video, audio recording, text, or IPFS file linked to a specific location in the city.</p>
+          <p>Each accepted contribution becomes a point on the map — a permanent fragment of the city's collective digital memory.</p>
+          <div class="contribute-steps">
+            <div class="contribute-step"><div class="step-num">01</div><div class="step-text">Fill the form with your experience, coordinates and media link or IPFS address.</div></div>
+            <div class="contribute-step"><div class="step-num">02</div><div class="step-text">The administrator reviews your submission for quality and relevance.</div></div>
+            <div class="contribute-step"><div class="step-num">03</div><div class="step-text">Once approved, your point appears on the map and in the public archive.</div></div>
+          </div>
+        </div>
+        <div>
+          <form id="contributeForm">
+            <label class="form-label">Title *</label>
+            <input class="form-input" type="text" name="title" placeholder="Name your experience" required/>
+            <label class="form-label">Type</label>
+            <select class="form-select" name="type">
+              <option value="video">Video</option>
+              <option value="audio">Audio</option>
+              <option value="ipfs">IPFS / Text file</option>
+              <option value="photo">Photo</option>
+              <option value="other">Other</option>
+            </select>
+            <div class="form-row">
+              <div>
+                <label class="form-label">Latitude *</label>
+                <input class="form-input" type="text" name="lat" placeholder="4.6239" required/>
+              </div>
+              <div>
+                <label class="form-label">Longitude *</label>
+                <input class="form-input" type="text" name="lng" placeholder="-74.1448" required/>
+              </div>
+            </div>
+            <label class="form-label">Description *</label>
+            <textarea class="form-textarea" name="description" placeholder="Describe your walk or experience…" required></textarea>
+            <label class="form-label">Media URL (YouTube, SoundCloud, etc.)</label>
+            <input class="form-input" type="url" name="mediaUrl" placeholder="https://…"/>
+            <label class="form-label">IPFS Address</label>
+            <input class="form-input" type="text" name="ipfsUrl" placeholder="ipfs://…"/>
+            <label class="form-label">Your name</label>
+            <input class="form-input" type="text" name="authorName" placeholder="Optional"/>
+            <label class="form-label">Your email (for review notifications)</label>
+            <input class="form-input" type="email" name="authorEmail" placeholder="Optional"/>
+            <div class="form-note">All submissions are reviewed before appearing on the public map. By submitting you agree your contribution may be published as part of the Simultaneous Window archive.</div>
+            <button class="form-submit" type="submit" id="submitBtn">Submit for review →</button>
+            <div class="form-success" id="formSuccess">✓ Contribution received. The administrator will review your submission shortly.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 ABOUT -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <span class="section-tag">06 — About</span>
+        <h2>The Project</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>D.C.O.T. · 2018–</h3>
+          <p>Simultaneous Window is a multimedia art project which connects both the experience of walking through a physical space and that of walking through a digital space.</p>
+          <p>Parting from video and audio archives of daily commutes, DCOT builds a sense of simultaneity between real and digital life on the web. The platform is made up of daily lived experiences of city life in Bogotá.</p>
+          <p>This web platform contains an experimental cartography on a traditional map. The user is able to enter and walk through a real physical space, browsing through clicks on the contents stored there. All files provide a geolocation text file address on IPFS, building the decentralized web hypertext.</p>
+          <p>The project seeks to achieve accessibility to public information on the web. The scheme and structure of the project is saved in a document on the decentralized web.</p>
+        </div>
+        <div>
+          <div class="about-links">
+            <a href="https://simultaneouswindow.xyz" target="_blank" class="about-link"><span>simultaneouswindow.xyz</span><span class="arrow">↗</span></a>
+            <a href="https://objkt.com/users/tz1NRH5vQHA62EKzSHXDZ4V8tXMzUuBCQToR" target="_blank" class="about-link"><span>objkt.com · NFT collection</span><span class="arrow">↗</span></a>
+            <a href="https://www.voxels.com/spaces/3a1173bc-9f73-457d-a567-20f9d849702c/play" target="_blank" class="about-link"><span>Voxels · Septimazo space</span><span class="arrow">↗</span></a>
+            <a href="https://umap.openstreetmap.fr/en/map/simultaneous-window-bogota_723501" target="_blank" class="about-link"><span>uMap · Full map</span><span class="arrow">↗</span></a>
+            <a href="https://linktr.ee/dcot" target="_blank" class="about-link"><span>linktr.ee/dcot</span><span class="arrow">↗</span></a>
+            <a href="admin/" class="about-link" style="border-color:rgba(200,245,90,0.2);color:var(--accent)"><span>Admin panel</span><span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="footer">
+  <span class="footer-logo">S·W</span>
+  <span class="footer-copy">D.C.O.T. · Simultaneous Window · Bogotá 2018– · simultaneouswindow.xyz</span>
+  <div class="footer-links">
+    <a href="https://objkt.com/users/tz1NRH5vQHA62EKzSHXDZ4V8tXMzUuBCQToR" target="_blank">Objkt</a>
+    <a href="https://www.voxels.com/spaces/3a1173bc-9f73-457d-a567-20f9d849702c/play" target="_blank">Voxels</a>
+    <a href="https://linktr.ee/dcot" target="_blank">Linktree</a>
+    <a href="admin/">Admin</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
