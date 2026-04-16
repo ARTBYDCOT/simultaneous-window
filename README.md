@@ -55,7 +55,7 @@ Edit the `entries` array in `js/main.js` to add new experiences to the grid and 
 ## Network
 
 - XTZ: `simultaneouswindow.tez`
-- ETH: `dcot-art.eth.co`
+- ETH: `dcot-art.eth`
 - BTC: `14fDoUDKZ11REVuRxMSwKNvR36ToJ2UCM8`
 - Objkt: [tz1NRH5vQHA62EKzSHXDZ4V8tXMzUuBCQToR](https://objkt.com/users/tz1NRH5vQHA62EKzSHXDZ4V8tXMzUuBCQToR)
 - Voxels: [Septimazo Space](https://www.voxels.com/spaces/3a1173bc-9f73-457d-a567-20f9d849702c/play)
